@@ -23,11 +23,3 @@ module.exports = (sequelize) => {
     season: { type: DataTypes.ARRAY(DataTypes.STRING), allowNull: false },
   });
 };
-
-/* 
--  ID. \*
--  Nombre. \*
--  Dificultad (número del 1 al 5). \*
--  Duración (en horas).
--  Temporada (Verano, Otoño, Invierno o Primavera). \*
-*/
