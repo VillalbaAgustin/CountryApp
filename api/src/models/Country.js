@@ -16,13 +16,9 @@ module.exports = (sequelize) => {
     flags: { type: DataTypes.ARRAY(DataTypes.STRING), allowNull: false },
     continents: { type: DataTypes.ARRAY(DataTypes.STRING), allowNull: false },
     capital: { type: DataTypes.ARRAY(DataTypes.STRING), allowNull: false },
-    subregion: DataTypes.STRING,
-    area: DataTypes.FLOAT,
+    subregion: { type: DataTypes.STRING },
+    area: { type: DataTypes.FLOAT },
     population: { type: DataTypes.INTEGER, allowNull: false },
-    maps: DataTypes.STRING,
+    maps: { type: DataTypes.STRING },
   });
 };
-
-
-
-
