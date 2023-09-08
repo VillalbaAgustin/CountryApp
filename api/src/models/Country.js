@@ -6,11 +6,11 @@ module.exports = (sequelize) => {
   sequelize.define("country", {
     id: {
       type: DataTypes.STRING,
+      primaryKey: true,
       allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
-      primaryKey: true,
       allowNull: false,
     },
     flags: { type: DataTypes.ARRAY(DataTypes.STRING), allowNull: false },
@@ -22,3 +22,5 @@ module.exports = (sequelize) => {
     maps: { type: DataTypes.STRING },
   });
 };
+
+// Country.hasMany(Activity,{})
