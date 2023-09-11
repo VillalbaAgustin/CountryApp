@@ -27,20 +27,27 @@ const createCountries = (req, res) => {
           });
         }
       });
-      res.send('Coutry created');
+      res.send('Country created');
     })
 
     .catch((err) => {
       console.error(err);
+      res.status(500).json({message: err.message})
     });
 };
 
-const getAllCountries = (req, res) => {
-  res.send("Geting countries");
+const getAllCountries = async (req, res) => {
+try {
+  const countries = await Country.findAll();
+  res.json(countries);
+} catch (err) {
+  res.status(500).json({message: err.message})
+}
 };
 
 const getCountryById = (req, res) => {
-  res.send("Argentina");
+  const country = Country.findByPk(req.body)
+  res.send();
 };
 
 const getCountryByName = (req, res) => {
