@@ -1,16 +1,17 @@
 import { BrowserRouter } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import { store } from './store';
+import { Provider } from 'react-redux';
+
 import './App.css';
 import { AppRouter } from './router/AppRouter';
+import { store } from './store/store';
 
 function App() {
   return (
-    // <Provider store={store}>
+    <Provider store={store}>
       <BrowserRouter>
         <AppRouter/>
       </BrowserRouter>
-    // </Provider>
+    </Provider>
   );
 }
 
