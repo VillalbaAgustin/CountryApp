@@ -1,0 +1,29 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(207, 26%, 17%);
+  color: antiquewhite;
+  flex: auto;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+button{
+  background-color: hsl(207, 26%, 17%);
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+
+.moon{
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+.moon svg{
+  color: antiquewhite;
+}
