@@ -1,12 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const activitySlice = createSlice({
-  name: 'activity',
+  name: "activity",
   initialState: {
     events: [],
   },
-  reducers: {
-
-  }
-})
-
+  reducers: {},
+});

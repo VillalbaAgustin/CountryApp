@@ -12,7 +12,7 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-router.post("/", createCountries);
+router.post("/", createCountries); 
 router.get("/", getAllCountries);
 router.get("/:idPais", getCountryById);
 router.get("/name?", getCountryByName);

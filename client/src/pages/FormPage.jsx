@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export const FormPage = () => {
   return (
@@ -6,5 +6,5 @@ export const FormPage = () => {
       <h1>FormPage</h1>
       <form action=""></form>
     </div>
-  )
-}
+  );
+};
