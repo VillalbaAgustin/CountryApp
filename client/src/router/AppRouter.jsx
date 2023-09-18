@@ -1,7 +1,6 @@
 import { Route, Routes /*, Navigate */ } from "react-router-dom";
 import { DetailPage, FormPage, HomePage, LandingPage } from "../pages";
 
-
 export const AppRouter = () => {
   return (
     <Routes>

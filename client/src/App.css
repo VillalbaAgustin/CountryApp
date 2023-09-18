@@ -1,0 +1,15 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* #dark .App{
+  background-color: hsl(207, 26%, 17%);
+  color: antiquewhite;
+}
+
+#light .App{
+  background-color: hsl(0, 0%, 52%);
+  color: hsl(200, 15%, 8%);
+} */
+
