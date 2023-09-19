@@ -1,4 +1,4 @@
-/* ? //////////////// Navbar ////////////////*/
+/* * //////////////// Navbar ////////////////*/
 
 nav{
   display: flex;
@@ -19,9 +19,40 @@ nav{
   color: hsl(200, 15%, 8%);
 }
 
+
 .sun, .moon{
   display: flex;
-  width: 40px;
   cursor: pointer;
+  gap: 5px;
 }
 
+.sun svg, .moon svg{
+  width: 40px;
+}
+
+.sun span, .moon span{
+  display: flex;
+  align-items: center;
+  font-weight:  bolder;
+  letter-spacing: 1.618034px;
+}
+
+
+.fade-in{
+  animation: fadeIn 1.618034s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+  .sun span, .moon span{
+    display: none;
+  }
+
+  .sun svg, .moon svg{
+    width: 35px;
+  }
+}

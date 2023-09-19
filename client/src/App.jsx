@@ -29,7 +29,7 @@ function App() {
     <Provider store={store}>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <BrowserRouter>
-          <div className="App" id={theme}>
+          <div className="app mapa" id={theme}>
             <NavBar />
             <AppRouter />
           </div>

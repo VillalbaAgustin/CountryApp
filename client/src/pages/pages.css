@@ -1,9 +1,62 @@
-#dark{
+/* #dark{
   background-color: hsl(207, 26%, 17%);
   color: antiquewhite;
+
 }
 
 #light{
   background-color: hsl(0, 0%, 98%);
   color: hsl(200, 15%, 8%);
+} */
+
+.ticketDiv a{
+  display: flex;
+  height: 13vw;
+  width: 13vw;
+  justify-content: center;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  animation: myAnim 2s ease 7s infinite normal forwards;
+  /* border: red solid 2px; */
+}
+
+.ticketDiv a :hover{
+  height: 14vw;
+  width: 14vw;
+  animation: 2s duration ease;
+}
+
+
+.ticket{
+  object-fit: scale-down;
+}
+
+/* Shake Bottom Animation */
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
 }

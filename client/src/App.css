@@ -1,14 +1,37 @@
-.App{
+.app{
   width: 100vw;
   height: 100vh;
+
+  /* background-image: url('../public/countries (1).png'); */
+  
 }
 
-/* #dark .App{
+.mapa{
+  background-image: url('../public/countries.png');
+  background-size:  70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+#dark{
   background-color: hsl(207, 26%, 17%);
   color: antiquewhite;
 }
 
-#light .App{
+#light{
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+
+
+
+/* #dark .app {
+  background-color: hsl(207, 26%, 17%);
+  color: antiquewhite;
+}
+
+#light .app {
   background-color: hsl(0, 0%, 52%);
   color: hsl(200, 15%, 8%);
 } */
