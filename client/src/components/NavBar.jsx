@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import "./components.css";
 import { ThemeContext } from "../App";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const {theme, toggleTheme} = useContext(ThemeContext);
 
   return (
     <nav className="NavBar" id={theme}>
-      <h1>Where in the world?</h1>
+      <Link to={'/home'}>
+        <h1>Where in the world?</h1>
+      </Link>
       
       {theme === 'light' && (
         <div className="moon fade-in" id={theme} onClick={toggleTheme}>

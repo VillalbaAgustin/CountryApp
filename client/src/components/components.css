@@ -19,6 +19,17 @@ nav{
   color: hsl(200, 15%, 8%);
 }
 
+#dark a {
+  cursor: pointer;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+#light a {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(200, 15%, 8%);
+}
 
 .sun, .moon{
   display: flex;
