@@ -2,6 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createContext, useEffect, useState } from "react";
 
+
+
 import "./App.css";
 import { AppRouter } from "./router/AppRouter";
 import { store } from "./store/store";
@@ -20,6 +22,7 @@ function App() {
   };
 
   const [theme, setTheme] = useState(getDefaultTheme);
+
   
   useEffect(() => {
     localStorage.setItem("theme", theme);
