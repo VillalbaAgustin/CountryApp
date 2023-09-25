@@ -12,7 +12,7 @@ export const countrySlice = createSlice({
       state.isLoading = true;
     },
     setCountries: (state, action) => {
-      console.log(action);
+      state.countries = action.payload;
     },
   },
 });

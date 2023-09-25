@@ -7,8 +7,6 @@ export const HomePage = () => {
 
   startLoadingCountries();
 
-console.log(process.env)
-
   return (
     <div>
       <h1>HomePageee</h1>
