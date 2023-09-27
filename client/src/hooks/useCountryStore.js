@@ -11,12 +11,11 @@ export const useCountryStore = () => {
 
   const startLoadingCountries = async () => {
     try {
-      const data = await countryApi.get("/countries");
-      // console.log(data);
-      dispatch(setCountries(data))
+      const res = await countryApi.get("/countries");
+      console.log(res.data);
+      dispatch(setCountries(res.data))
     } catch (error) {
-      // throw error;
-      console.log(error.response.data);
+      console.log(error)
     }
   };
 
