@@ -1,7 +1,14 @@
+/* * //////////////// LandingPage ////////////////*/
+
 #dark a .startButton{
   background-color: hsl(207, 26%, 17%);
   color: antiquewhite;
   border: antiquewhite solid 1.618034px;
+  transition: all 0.5s ease;
+}
+
+#dark a .startButton:hover{
+  background-color:  hsl(209, 23%, 22%);
 }
 
 #light a .startButton{
@@ -20,6 +27,10 @@
   border-radius: 5px;
   opacity: 0;
   animation: button 3s ease 5s 1 normal forwards;
+}
+
+.startButton:hover{
+  color: aqua;
 }
 
 .landingDiv .ticket{

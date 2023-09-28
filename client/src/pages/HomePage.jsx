@@ -1,16 +1,26 @@
-import React from 'react'
-import { useCountryStore } from '../hooks/useCountryStore'
+import React, { useEffect } from "react";
+import { useCountryStore } from "../hooks/useCountryStore";
+import "./homePage.css";
+import { CountryCard } from "../components/CountryCard";
 
 export const HomePage = () => {
+  const { startLoadingCountries, countries } = useCountryStore();
 
-  const { startLoadingCountries }  = useCountryStore();
+  useEffect(() => {
+    startLoadingCountries();
+    // console.log(countries)
+  }, []);
 
-  startLoadingCountries();
-
+  console.log(countries[0]);
   return (
-    <div>
-      <h1>HomePageee</h1>
-      <h1>Countries</h1>
+    <div className="container">
+        {
+          countries.map((country)=> 
+          <div className="card">
+            <CountryCard key={country.id} country={country}/>
+          </div>
+          )
+        }
     </div>
-  )
-}
+  );
+};

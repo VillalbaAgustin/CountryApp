@@ -1,0 +1,39 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+  justify-items: center;
+  align-items: center;
+  /* border: red 1px solid; */
+  margin: 3vw;
+  padding: 1vw 8vw;
+}
+
+.card{
+  width: 12.5vw;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: hsla(208, 23%, 22%, 0.349);
+}
+
+.flag{
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  align-items: center;
+  /* width: 30%; */
+}
+
+.flag img{
+  display: flex;
+  max-width: 10vw;
+  max-height: 5vw;
+  /* width: 95%; */
+  /* align-items: center; */
+
+}
